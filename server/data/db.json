@@ -1,0 +1,552 @@
+{
+  "auth": {
+    "username": "admin",
+    "password": "lodu@lalit"
+  },
+  "content": {
+    "hero": {
+      "title": "MISHWA.",
+      "subtitle": "VIDEO EDITOR & VISUAL ARTIST",
+      "description": "Crafting scroll-stopping narratives for the digital age. Specializing in high-retention Instagram Reels and cinematic storytelling.",
+      "buttonText": "View Portfolio"
+    },
+    "social": {
+      "email": "mishwa@example.com",
+      "instagram": "https://instagram.com/mishwazalavadiya"
+    },
+    "footer": {
+      "copyright": "© 2026 Mishwa. All rights reserved.",
+      "showSocial": false
+    },
+    "projects": [
+      {
+        "id": 101,
+        "title": "Glow Routines",
+        "category": "Beauty & Personal Care",
+        "image": "https://i.ytimg.com/vi/aVLwDefz5pY/maxresdefault.jpg",
+        "orientation": "portrait",
+        "link": "youtube.com"
+      },
+      {
+        "id": 102,
+        "title": "Bali Villas",
+        "category": "Travel & Local experience",
+        "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 103,
+        "title": "Summer Shades",
+        "category": "Fashion & Apparel",
+        "image": "https://images.unsplash.com/photo-1572251863040-5a30a912bb01?q=80&w=800&auto=format&fit=crop",
+        "orientation": "portrait"
+      },
+      {
+        "id": 104,
+        "title": "Espresso Art",
+        "category": "Food & Beverage",
+        "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 105,
+        "title": "Crossfit Power",
+        "category": "Fitness & Wellness",
+        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 106,
+        "title": "Skincare Essentials",
+        "category": "Beauty & Personal Care",
+        "image": "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=800&auto=format&fit=crop",
+        "orientation": "portrait"
+      },
+      {
+        "id": 107,
+        "title": "Streetwear 2024",
+        "category": "Fashion & Apparel",
+        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
+        "orientation": "portrait"
+      },
+      {
+        "id": 108,
+        "title": "Island Life",
+        "category": "Travel & Local experience",
+        "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=800&auto=format&fit=crop",
+        "orientation": "portrait"
+      },
+      {
+        "id": 109,
+        "title": "Sushi Master",
+        "category": "Food & Beverage",
+        "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd43ea?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 110,
+        "title": "Yoga Flow",
+        "category": "Fitness & Wellness",
+        "image": "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?q=80&w=800&auto=format&fit=crop",
+        "orientation": "portrait"
+      },
+      {
+        "id": 111,
+        "title": "Makeup Mastery",
+        "category": "Beauty & Personal Care",
+        "image": "https://images.unsplash.com/photo-1522335789203-abd1aaccd158?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 112,
+        "title": "Vintage Vibes",
+        "category": "Fashion & Apparel",
+        "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 113,
+        "title": "Parisian Streets",
+        "category": "Travel & Local experience",
+        "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 114,
+        "title": "Burger Bliss",
+        "category": "Food & Beverage",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 115,
+        "title": "Gym Rat",
+        "category": "Fitness & Wellness",
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop",
+        "orientation": "portrait"
+      },
+      {
+        "id": 116,
+        "title": "Mountain Peak",
+        "category": "Travel & Local experience",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 117,
+        "title": "Healthy Greens",
+        "category": "Food & Beverage",
+        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop",
+        "orientation": "portrait"
+      },
+      {
+        "id": 118,
+        "title": "Spa Day",
+        "category": "Beauty & Personal Care",
+        "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "landscape"
+      },
+      {
+        "id": 119,
+        "title": "Urban Style",
+        "category": "Fashion & Apparel",
+        "image": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=800&auto=format&fit=crop",
+        "orientation": "portrait"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Alex Creator",
+        "role": "YouTuber (1M+)",
+        "text": "Mishwa's editing took my channel to the next level. Retention rates skyrocketed!",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Sarah Fitness",
+        "role": "Instagram Coach",
+        "text": "Fast turnaround and incredible attention to detail. The best investment for my brand.",
+        "image": "https://randomuser.me/api/portraits/women/44.jpg"
+      },
+      {
+        "id": 3,
+        "name": "TechDaily",
+        "role": "Tech Reviewer",
+        "text": "She just gets the vibe immediately. No revision needed. Pure magic.",
+        "image": "https://randomuser.me/api/portraits/men/85.jpg"
+      }
+    ]
+  },
+  "analytics": {
+    "visits": [
+      {
+        "timestamp": "2026-01-30T12:25:29.185Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:25:39.287Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:26:40.047Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:27:40.709Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:29:45.222Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:32:18.944Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:34:36.588Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:34:55.252Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:34:55.289Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:35:07.111Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:35:18.155Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:35:19.857Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:35:23.545Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:35:34.179Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:35:42.592Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:35:51.353Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:38:26.737Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:38:34.985Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:38:36.022Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:38:41.132Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:40:23.166Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:45:36.154Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:45:38.272Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:46:30.044Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:46:38.036Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:51:27.764Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:51:42.312Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:51:42.383Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:51:50.450Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:51:55.269Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:53:04.541Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:53:24.955Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      },
+      {
+        "timestamp": "2026-01-30T12:53:36.000Z",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "country": "Unknown"
+      }
+    ],
+    "ip_logs": [],
+    "stats": {
+      "total_visitors": 1290,
+      "unique_visitors": 1,
+      "countries": {
+        "US": 400,
+        "IN": 300,
+        "UK": 150
+      },
+      "devices": {
+        "mobile": 800,
+        "desktop": 440
+      }
+    }
+  },
+  "notifications": [
+    {
+      "id": "da8ed301-c89b-4320-95a9-e01a828716c5",
+      "type": "info",
+      "title": "Content Updated",
+      "message": "Website content was modified via CMS",
+      "ip": null,
+      "timestamp": "2026-01-30T15:17:29.297Z",
+      "read": false
+    },
+    {
+      "id": "b6a8bf50-cc0a-4620-bf2a-3dfd9994c254",
+      "type": "security",
+      "title": "Login Success",
+      "message": "Admin login from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:17:20.106Z",
+      "read": false
+    },
+    {
+      "id": "03c3ac22-2a91-4443-b1cc-787d51915b1a",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .reviews.0.text from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:09:01.251Z",
+      "read": false
+    },
+    {
+      "id": "457f892e-5736-46ed-8a9b-d94b4b3ad6ad",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:08:56.119Z",
+      "read": false
+    },
+    {
+      "id": "7859ebd1-0785-4a41-a768-8322e52bbe4c",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .reviews.0.text from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:06:05.798Z",
+      "read": false
+    },
+    {
+      "id": "c7fb6265-3180-4da7-9b6e-34703ffd719c",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:06:00.920Z",
+      "read": false
+    },
+    {
+      "id": "048fbe70-60d5-45af-9fca-9fe5bf89f38f",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .reviews.0.text from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:04:41.700Z",
+      "read": false
+    },
+    {
+      "id": "3e28ae1b-da90-4387-ad15-6abd7798e409",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:04:37.789Z",
+      "read": false
+    },
+    {
+      "id": "9c84e197-4756-4f5d-92b3-120d0a937d8a",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:04:20.566Z",
+      "read": false
+    },
+    {
+      "id": "21faa201-7eca-4157-bc7c-25ba126aec68",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:00:30.117Z",
+      "read": false
+    },
+    {
+      "id": "51f80712-01ca-4775-86d8-d7603c8f47ab",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .reviews.0.text from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:00:25.199Z",
+      "read": false
+    },
+    {
+      "id": "d54727f2-a9ce-4865-8c40-59c4fce0a6fe",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:00:21.402Z",
+      "read": false
+    },
+    {
+      "id": "d3765a9f-3fad-4d6c-aa4c-f68cb4ef96b4",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:00:17.530Z",
+      "read": false
+    },
+    {
+      "id": "549398ea-2584-4cbd-9385-eb3e511425d4",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:00:13.035Z",
+      "read": false
+    },
+    {
+      "id": "8507772b-a400-4650-9ba4-ad1e07a23f16",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T15:00:07.148Z",
+      "read": false
+    },
+    {
+      "id": "ccd58b3b-8120-4ffe-907e-775a68ba87ae",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T14:56:48.910Z",
+      "read": false
+    },
+    {
+      "id": "f39c6d93-2db1-401e-be46-01edd6e8b663",
+      "type": "attack_blocked",
+      "title": "Malicious Input Blocked",
+      "message": "Suspicious pattern detected in .userAgent from IP: ::1",
+      "ip": "::1",
+      "timestamp": "2026-01-30T14:56:14.962Z",
+      "read": false
+    }
+  ]
+}
