@@ -173,7 +173,7 @@
         "Views"
       ],
       "text": "I am a creative video editor",
-      "image": "https://kgramjutjldqiabjzrih.supabase.co/storage/v1/object/public/portfolio-images/1769862239290-5394375f.webp"
+      "image": "https://kgramjutjldqiabjzrih.supabase.co/storage/v1/object/public/portfolio-images/1769867112612-b9339779.jfif"
     },
     "cinema": {
       "title": "Long Form Works",
@@ -236,6 +236,24 @@
     }
   },
   "notifications": [
+    {
+      "id": "7a2e3737-1589-403c-a7e6-fc694215aa39",
+      "type": "info",
+      "title": "Content Updated",
+      "message": "Website content was modified via CMS",
+      "ip": null,
+      "timestamp": "2026-01-31T13:45:14.389Z",
+      "read": false
+    },
+    {
+      "id": "547b1bc9-8332-4d03-8d37-ea8f335d8bb7",
+      "type": "info",
+      "title": "Image Uploaded",
+      "message": "New image uploaded: 1769867112612-b9339779.jfif",
+      "ip": null,
+      "timestamp": "2026-01-31T13:45:12.861Z",
+      "read": false
+    },
     {
       "id": "6e88de36-3c71-4238-9d60-67c60fbda01e",
       "type": "info",

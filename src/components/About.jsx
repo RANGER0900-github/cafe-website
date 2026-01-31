@@ -21,7 +21,7 @@ const About = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-white/10 group">
-                            <img src="/images/mishwa_portrait.png" alt="Mishwa" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 will-change-transform" />
+                            <img src={content.about?.image || '/images/mishwa_portrait.png'} alt="Mishwa" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 will-change-transform" />
                             <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
                         </div>
                     </motion.div>
