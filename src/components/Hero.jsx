@@ -11,10 +11,11 @@ const Hero = () => {
 
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-            {/* Background Elements */}
+            {/* Background Elements - Cafe Theme */}
             <div className="absolute inset-0 bg-background z-0">
-                <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] animate-pulse-glow"></div>
-                <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[120px] animate-pulse-glow delay-1000"></div>
+                <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] animate-pulse-glow"></div>
+                <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-accent/15 rounded-full blur-[120px] animate-pulse-glow delay-1000"></div>
+                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/wood-pattern.png')] opacity-5"></div>
             </div>
 
             <div className="relative z-10 text-center px-4">

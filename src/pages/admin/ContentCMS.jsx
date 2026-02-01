@@ -81,10 +81,12 @@ const ContentCMS = () => {
     const addProject = () => {
         const newProject = {
             id: Date.now(),
-            title: "New Project",
-            category: "Fashion & Apparel",
-            image: "https://images.unsplash.com/photo-1549557613-21c6020586a0",
+            title: "New Menu Item",
+            category: "Hot Beverages",
+            image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop",
             link: "",
+            price: "$0.00",
+            description: "Delicious item description",
             orientation: "portrait",
             textColor: "#ffffff",
             textPosition: { x: 50, y: 85 }
@@ -93,7 +95,7 @@ const ContentCMS = () => {
             ...localContent,
             projects: [newProject, ...(localContent.projects || [])]
         });
-        toast.success("New Project Added!");
+        toast.success("New Menu Item Added!");
     };
 
     const removeProject = (id) => {
@@ -191,12 +193,12 @@ const ContentCMS = () => {
     };
 
     const categories = [
-        "Beauty & Personal Care", "Food & Beverage", "Fitness & Wellness",
-        "Fashion & Apparel", "Travel & Local experience", "Tech & Gadgets",
-        "Real Estate", "Other"
+        "Hot Beverages", "Cold Beverages", "Breakfast",
+        "Main Course", "Desserts", "Snacks & Appetizers",
+        "Seasonal Specials", "Other"
     ];
 
-    const colorPresets = ['#ffffff', '#64ffda', '#0070f3', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#000000'];
+    const colorPresets = ['#ffffff', '#d4a574', '#c7956d', '#8b6f47', '#f5ebe0', '#2c1810', '#e8dcc8', '#000000'];
 
     const ProjectPreview = ({ project, onClose }) => {
         const [textPos, setTextPos] = useState(project.textPosition || { x: 50, y: 85 });
@@ -355,8 +357,8 @@ const ContentCMS = () => {
 
             <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
                 <div>
-                    <h1 className="text-5xl font-display font-black text-white mb-2">Content CMS<span className="text-primary">.</span></h1>
-                    <p className="text-gray-400">Manage your portfolio content, projects, and reviews.</p>
+                    <h1 className="text-5xl font-display font-black text-white mb-2">Cafe CMS<span className="text-primary">.</span></h1>
+                    <p className="text-gray-400">Manage your cafe menu, reviews, and contact information.</p>
                 </div>
             </header>
 
@@ -393,18 +395,27 @@ const ContentCMS = () => {
             </AnimatePresence>
 
             <div className="flex gap-3 mb-8 overflow-x-auto pb-2 flex-wrap">
-                {['projects', 'reviews', 'hero', 'cinema', 'about', 'branding', 'social', 'footer'].map(tab => (
+                {[
+                    { key: 'projects', label: 'Menu Items' },
+                    { key: 'reviews', label: 'Reviews' },
+                    { key: 'hero', label: 'Hero' },
+                    { key: 'cinema', label: 'Specials' },
+                    { key: 'about', label: 'Location' },
+                    { key: 'branding', label: 'Branding' },
+                    { key: 'social', label: 'Social & Contact' },
+                    { key: 'footer', label: 'Footer' }
+                ].map(tab => (
                     <motion.button
-                        key={tab}
-                        onClick={() => setActiveTab(tab)}
-                        className={`px-5 py-3 rounded-xl font-bold uppercase tracking-wider transition-all border text-sm ${activeTab === tab
-                            ? 'bg-white/10 border-primary text-primary shadow-[0_0_15px_rgba(100,255,218,0.2)]'
+                        key={tab.key}
+                        onClick={() => setActiveTab(tab.key)}
+                        className={`px-5 py-3 rounded-xl font-bold uppercase tracking-wider transition-all border text-sm ${activeTab === tab.key
+                            ? 'bg-white/10 border-primary text-primary shadow-[0_0_15px_rgba(212,165,116,0.2)]'
                             : 'bg-transparent border-white/10 text-gray-500 hover:text-white'
                             }`}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        {tab}
+                        {tab.label}
                     </motion.button>
                 ))}
             </div>
@@ -413,7 +424,7 @@ const ContentCMS = () => {
                 {activeTab === 'projects' && (
                     <motion.div key="projects" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="space-y-6">
                         <motion.button onClick={addProject} className="w-full py-6 border-2 border-dashed border-white/10 rounded-3xl text-gray-400 hover:border-primary hover:text-primary hover:bg-primary/5 transition-all flex items-center justify-center gap-3 font-bold text-lg" whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
-                            <Plus size={24} /> ADD NEW PROJECT
+                            <Plus size={24} /> ADD NEW MENU ITEM
                         </motion.button>
 
                         <div className="grid grid-cols-1 gap-6">
@@ -453,6 +464,17 @@ const ContentCMS = () => {
                                                 <select value={project.category} onChange={(e) => handleProjectChange(project.id, 'category', e.target.value)} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none">
                                                     {categories.map(cat => <option key={cat} value={cat}>{cat}</option>)}
                                                 </select>
+                                            </div>
+                                        </div>
+
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            <div>
+                                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Price</label>
+                                                <input type="text" value={project.price || ''} onChange={(e) => handleProjectChange(project.id, 'price', e.target.value)} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="$0.00" />
+                                            </div>
+                                            <div>
+                                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Description</label>
+                                                <input type="text" value={project.description || ''} onChange={(e) => handleProjectChange(project.id, 'description', e.target.value)} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none text-sm" placeholder="Brief description..." />
                                             </div>
                                         </div>
 
@@ -598,26 +620,26 @@ const ContentCMS = () => {
                 {activeTab === 'social' && (
                     <motion.div key="social" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6 max-w-2xl">
                         <div className="bg-[#112240]/50 p-8 rounded-3xl border border-white/5 space-y-6">
-                            <h3 className="text-lg font-bold text-white mb-4">Social Media Links</h3>
+                            <h3 className="text-lg font-bold text-white mb-4">Social Media & Contact</h3>
 
                             <div>
                                 <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-2"><Mail size={14} /> Email Address</label>
-                                <input type="email" value={localContent.social?.email || ''} onChange={(e) => trackChange({ ...localContent, social: { ...localContent.social, email: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="your@email.com" />
+                                <input type="email" value={localContent.social?.email || ''} onChange={(e) => trackChange({ ...localContent, social: { ...localContent.social, email: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="hello@cafe.com" />
                             </div>
 
                             <div>
                                 <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-2"><Instagram size={14} /> Instagram</label>
-                                <input type="url" value={localContent.social?.instagram || ''} onChange={(e) => trackChange({ ...localContent, social: { ...localContent.social, instagram: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="https://instagram.com/username" />
+                                <input type="url" value={localContent.social?.instagram || ''} onChange={(e) => trackChange({ ...localContent, social: { ...localContent.social, instagram: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="https://instagram.com/cafedemeet" />
                             </div>
 
                             <div>
-                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-2"><Youtube size={14} /> YouTube</label>
-                                <input type="url" value={localContent.social?.youtube || ''} onChange={(e) => trackChange({ ...localContent, social: { ...localContent.social, youtube: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="https://youtube.com/@channel" />
+                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-2"><ExternalLink size={14} /> Zomato Link</label>
+                                <input type="url" value={localContent.social?.zomato || ''} onChange={(e) => trackChange({ ...localContent, social: { ...localContent.social, zomato: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="https://zomato.com/cafedemeet" />
                             </div>
 
                             <div>
-                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-2"><Twitter size={14} /> Twitter/X</label>
-                                <input type="url" value={localContent.social?.twitter || ''} onChange={(e) => trackChange({ ...localContent, social: { ...localContent.social, twitter: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="https://x.com/username" />
+                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-2"><User size={14} /> Phone Number</label>
+                                <input type="tel" value={localContent.social?.phone || ''} onChange={(e) => trackChange({ ...localContent, social: { ...localContent.social, phone: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="+1 (555) 123-4567" />
                             </div>
                         </div>
                     </motion.div>
@@ -687,12 +709,12 @@ const ContentCMS = () => {
                 {activeTab === 'about' && (
                     <motion.div key="about" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6 max-w-2xl">
                         <div className="bg-[#112240]/50 p-8 rounded-3xl border border-white/5 space-y-6">
-                            <h3 className="text-lg font-bold text-white mb-4">About Section</h3>
+                            <h3 className="text-lg font-bold text-white mb-4">Location & Contact</h3>
                             <div>
-                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">About Image</label>
+                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Cafe Image</label>
                                 <div className="flex items-center gap-4">
                                     <div className="w-32 h-32 rounded-lg overflow-hidden bg-black/30 border border-white/10">
-                                        {localContent.about?.image ? <img src={localContent.about.image} alt="About" className="w-full h-full object-cover" /> : <div className="flex items-center justify-center h-full text-gray-500">No image</div>}
+                                        {localContent.about?.image ? <img src={localContent.about.image} alt="Cafe" className="w-full h-full object-cover" /> : <div className="flex items-center justify-center h-full text-gray-500">No image</div>}
                                     </div>
                                     <div className="flex flex-col gap-2">
                                         <button onClick={() => triggerUpload('aboutImage', null)} className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm font-bold">Upload Image</button>
@@ -700,52 +722,38 @@ const ContentCMS = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">About Text</label>
-                                <textarea value={localContent.about?.text || ''} onChange={(e) => trackChange({ ...localContent, about: { ...localContent.about, text: e.target.value } })} rows={4} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none resize-none" placeholder="Write a short about section..." />
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Phone Number</label>
+                                    <input type="text" value={localContent.contact?.phone || ''} onChange={(e) => trackChange({ ...localContent, contact: { ...localContent.contact, phone: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="+1 (555) 123-4567" />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Email</label>
+                                    <input type="email" value={localContent.contact?.email || ''} onChange={(e) => trackChange({ ...localContent, contact: { ...localContent.contact, email: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="hello@cafe.com" />
+                                </div>
                             </div>
                             <div>
-                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Metrics (Metric 1, Metric 2, Metric 3)</label>
-                                <div className="space-y-3">
-                                    <div>
-                                        <p className="text-xs text-gray-400 mb-2">Metric 1 (e.g., 500+ Polished)</p>
-                                        <div className="flex gap-2">
-                                            <input type="number" value={localContent.about?.metrics?.[0] || 0} onChange={(e) => {
-                                                const m = [...(localContent.about?.metrics || [0,0,0])]; m[0]=parseInt(e.target.value||0);
-                                                trackChange({ ...localContent, about: { ...localContent.about, metrics: m } });
-                                            }} className="flex-1 bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white" placeholder="e.g., 500" />
-                                            <input type="text" value={localContent.about?.metricLabels?.[0] || 'Polished'} onChange={(e) => {
-                                                const l = [...(localContent.about?.metricLabels || ['Polished', 'Years', 'Views'])]; l[0]=e.target.value;
-                                                trackChange({ ...localContent, about: { ...localContent.about, metricLabels: l } });
-                                            }} className="flex-1 bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white" placeholder="Label" />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p className="text-xs text-gray-400 mb-2">Metric 2 (e.g., 3+ Years)</p>
-                                        <div className="flex gap-2">
-                                            <input type="number" value={localContent.about?.metrics?.[1] || 0} onChange={(e) => {
-                                                const m = [...(localContent.about?.metrics || [0,0,0])]; m[1]=parseInt(e.target.value||0);
-                                                trackChange({ ...localContent, about: { ...localContent.about, metrics: m } });
-                                            }} className="flex-1 bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white" placeholder="e.g., 3" />
-                                            <input type="text" value={localContent.about?.metricLabels?.[1] || 'Years'} onChange={(e) => {
-                                                const l = [...(localContent.about?.metricLabels || ['Polished', 'Years', 'Views'])]; l[1]=e.target.value;
-                                                trackChange({ ...localContent, about: { ...localContent.about, metricLabels: l } });
-                                            }} className="flex-1 bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white" placeholder="Label" />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p className="text-xs text-gray-400 mb-2">Metric 3 (e.g., 50M+ Views)</p>
-                                        <div className="flex gap-2">
-                                            <input type="number" value={localContent.about?.metrics?.[2] || 0} onChange={(e) => {
-                                                const m = [...(localContent.about?.metrics || [0,0,0])]; m[2]=parseInt(e.target.value||0);
-                                                trackChange({ ...localContent, about: { ...localContent.about, metrics: m } });
-                                            }} className="flex-1 bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white" placeholder="e.g., 50" />
-                                            <input type="text" value={localContent.about?.metricLabels?.[2] || 'Views'} onChange={(e) => {
-                                                const l = [...(localContent.about?.metricLabels || ['Polished', 'Years', 'Views'])]; l[2]=e.target.value;
-                                                trackChange({ ...localContent, about: { ...localContent.about, metricLabels: l } });
-                                            }} className="flex-1 bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white" placeholder="Label" />
-                                        </div>
-                                    </div>
+                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Address</label>
+                                <input type="text" value={localContent.contact?.address || ''} onChange={(e) => trackChange({ ...localContent, contact: { ...localContent.contact, address: e.target.value } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="123 Coffee Street, Downtown, NY 10001" />
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Weekday Hours</label>
+                                    <input type="text" value={localContent.contact?.hours?.weekdays || ''} onChange={(e) => trackChange({ ...localContent, contact: { ...localContent.contact, hours: { ...localContent.contact?.hours, weekdays: e.target.value } } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="7:00 AM - 10:00 PM" />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Weekend Hours</label>
+                                    <input type="text" value={localContent.contact?.hours?.weekends || ''} onChange={(e) => trackChange({ ...localContent, contact: { ...localContent.contact, hours: { ...localContent.contact?.hours, weekends: e.target.value } } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="8:00 AM - 11:00 PM" />
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Latitude</label>
+                                    <input type="number" step="0.0001" value={localContent.contact?.coordinates?.lat || 40.7580} onChange={(e) => trackChange({ ...localContent, contact: { ...localContent.contact, coordinates: { ...localContent.contact?.coordinates, lat: parseFloat(e.target.value) } } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Longitude</label>
+                                    <input type="number" step="0.0001" value={localContent.contact?.coordinates?.lng || -73.9855} onChange={(e) => trackChange({ ...localContent, contact: { ...localContent.contact, coordinates: { ...localContent.contact?.coordinates, lng: parseFloat(e.target.value) } } })} className="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none" />
                                 </div>
                             </div>
                         </div>
@@ -754,6 +762,89 @@ const ContentCMS = () => {
 
                 {activeTab === 'branding' && (
                     <motion.div key="branding" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6 max-w-2xl">
+                        <div className="bg-[#112240]/50 p-8 rounded-3xl border border-white/5 space-y-6">
+                            <h3 className="text-lg font-bold text-white mb-4">Featured Items & Settings</h3>
+                            <div>
+                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Homepage Featured Items (Select 4)</label>
+                                <p className="text-sm text-gray-400 mb-4">Choose which menu items appear on the homepage</p>
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    {localContent.projects && localContent.projects.map((item) => {
+                                        const isSelected = (localContent.featuredItems || []).includes(item.id);
+                                        return (
+                                            <motion.div
+                                                key={item.id}
+                                                onClick={() => {
+                                                    const current = localContent.featuredItems || [];
+                                                    let updated;
+                                                    if (isSelected) {
+                                                        updated = current.filter(id => id !== item.id);
+                                                    } else if (current.length < 4) {
+                                                        updated = [...current, item.id];
+                                                    } else {
+                                                        return; // Max 4 items
+                                                    }
+                                                    trackChange({ ...localContent, featuredItems: updated });
+                                                }}
+                                                whileHover={{ scale: 1.05 }}
+                                                whileTap={{ scale: 0.95 }}
+                                                className={`relative cursor-pointer rounded-xl overflow-hidden border-2 transition-all ${isSelected ? 'border-primary shadow-[0_0_15px_rgba(212,165,116,0.4)]' : 'border-white/10 opacity-60 hover:opacity-100'}`}
+                                            >
+                                                <div className="aspect-[3/4]">
+                                                    <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                                                    <div className="absolute bottom-2 left-2 right-2">
+                                                        <p className="text-white text-xs font-bold truncate">{item.title}</p>
+                                                        <p className="text-primary text-[10px]">{item.price}</p>
+                                                    </div>
+                                                    {isSelected && (
+                                                        <div className="absolute top-2 right-2 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                                                            <Star size={14} className="text-black fill-black" />
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </motion.div>
+                                        );
+                                    })}
+                                </div>
+                                <p className="text-xs text-gray-500 mt-2">{(localContent.featuredItems || []).length}/4 selected</p>
+                            </div>
+
+                            <div>
+                                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Redirect Behavior</label>
+                                <p className="text-sm text-gray-400 mb-4">Choose what happens when users click on menu items</p>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <motion.div
+                                        onClick={() => trackChange({ ...localContent, redirectType: 'zomato' })}
+                                        whileHover={{ scale: 1.02 }}
+                                        whileTap={{ scale: 0.98 }}
+                                        className={`p-4 rounded-xl cursor-pointer transition-all border-2 ${(localContent.redirectType || 'zomato') === 'zomato' ? 'border-primary bg-primary/10' : 'border-white/10 bg-white/5'}`}
+                                    >
+                                        <div className="flex items-center gap-3">
+                                            <div className={`w-4 h-4 rounded-full border-2 ${(localContent.redirectType || 'zomato') === 'zomato' ? 'border-primary bg-primary' : 'border-white/30'}`}></div>
+                                            <div>
+                                                <p className="text-white font-bold">Zomato/External Link</p>
+                                                <p className="text-xs text-gray-400">Redirect to ordering platform</p>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                    <motion.div
+                                        onClick={() => trackChange({ ...localContent, redirectType: 'call' })}
+                                        whileHover={{ scale: 1.02 }}
+                                        whileTap={{ scale: 0.98 }}
+                                        className={`p-4 rounded-xl cursor-pointer transition-all border-2 ${localContent.redirectType === 'call' ? 'border-primary bg-primary/10' : 'border-white/10 bg-white/5'}`}
+                                    >
+                                        <div className="flex items-center gap-3">
+                                            <div className={`w-4 h-4 rounded-full border-2 ${localContent.redirectType === 'call' ? 'border-primary bg-primary' : 'border-white/30'}`}></div>
+                                            <div>
+                                                <p className="text-white font-bold">Call to Order</p>
+                                                <p className="text-xs text-gray-400">Open phone dialer</p>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="bg-[#112240]/50 p-8 rounded-3xl border border-white/5 space-y-6">
                             <h3 className="text-lg font-bold text-white mb-4">Branding & Header Icon</h3>
                             <p className="text-sm text-gray-400 mb-4">Upload an SVG logo; server will generate PNG/WebP variants for favicons and social preview.</p>

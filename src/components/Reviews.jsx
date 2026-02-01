@@ -19,7 +19,15 @@ const Reviews = () => {
                 {/* Reviews */}
                 <div className="mb-40">
                     <div className="text-center mb-20">
-                        <h2 className="text-5xl md:text-7xl font-display font-bold text-white mb-6">Client Love<span className="text-secondary">.</span></h2>
+                        <motion.span
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block"
+                        >
+                            Testimonials
+                        </motion.span>
+                        <h2 className="text-5xl md:text-7xl font-display font-bold text-white mb-6">What Our Guests Say<span className="text-secondary">.</span></h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

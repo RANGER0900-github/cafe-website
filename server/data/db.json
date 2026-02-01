@@ -5,28 +5,47 @@
   },
   "content": {
     "hero": {
-      "title": "MISHWA.",
-      "subtitle": "VIDEO EDITOR & VISUAL ARTIST",
-      "description": "Crafting scroll-stopping narratives for the digital age. Specializing in high-retention Instagram Reels and cinematic storytelling.",
-      "buttonText": "View Portfolio"
+      "title": "CAFE DE MEET.",
+      "subtitle": "FRESHLY BREWED EXPERIENCES",
+      "description": "Where every cup tells a story. Experience the perfect blend of artisanal coffee, gourmet cuisine, and warm ambiance in the heart of the city.",
+      "buttonText": "Explore Menu"
     },
     "social": {
-      "email": "mishwa@example.com",
-      "instagram": "https://instagram.com/mishwazalavadiya"
+      "email": "hello@cafedemeet.com",
+      "instagram": "https://instagram.com/cafedemeet",
+      "phone": "+1 (555) 123-4567",
+      "zomato": "https://zomato.com/cafedemeet"
+    },
+    "contact": {
+      "phone": "+1 (555) 123-4567",
+      "email": "hello@cafedemeet.com",
+      "address": "123 Coffee Street, Downtown, NY 10001",
+      "coordinates": {
+        "lat": 40.7580,
+        "lng": -73.9855
+      },
+      "hours": {
+        "weekdays": "7:00 AM - 10:00 PM",
+        "weekends": "8:00 AM - 11:00 PM"
+      }
     },
     "footer": {
-      "copyright": "© 2026 Mishwa. All rights reserved.",
-      "showSocial": false
+      "copyright": "© 2026 Cafe De Meet. All rights reserved.",
+      "showSocial": true
     },
+    "featuredItems": [101, 102, 103, 104],
+    "redirectType": "zomato",
     "projects": [
       {
         "id": 101,
-        "title": "Glow Routines",
-        "category": "Beauty & Personal Care",
-        "image": "https://i.ytimg.com/vi/aVLwDefz5pY/maxresdefault.jpg",
+        "title": "Cappuccino Supreme",
+        "category": "Hot Beverages",
+        "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=1200&auto=format&fit=crop",
         "orientation": "portrait",
-        "link": "google.com",
-        "textColor": "#00ffff",
+        "link": "https://zomato.com",
+        "price": "$4.50",
+        "description": "Rich espresso with perfectly steamed milk and velvety foam",
+        "textColor": "#ffffff",
         "textPosition": {
           "x": 50,
           "y": 85
@@ -34,196 +53,346 @@
       },
       {
         "id": 102,
-        "title": "Bali Villas",
-        "category": "Travel & Local experience",
-        "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape",
-        "textColor": "#ffffff"
+        "title": "Avocado Toast Deluxe",
+        "category": "Breakfast",
+        "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$12.99",
+        "description": "Sourdough toast with smashed avocado, poached eggs, and microgreens",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 103,
-        "title": "Summer Shades",
-        "category": "Fashion & Apparel",
-        "image": "https://kgramjutjldqiabjzrih.supabase.co/storage/v1/object/public/portfolio-images/1769854177644-42e126a6.webp",
+        "title": "Tiramisu Heaven",
+        "category": "Desserts",
+        "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=1200&auto=format&fit=crop",
         "orientation": "portrait",
-        "textColor": "#ffffff"
+        "link": "https://zomato.com",
+        "price": "$8.99",
+        "description": "Classic Italian dessert with espresso-soaked ladyfingers",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 104,
-        "title": "Espresso Art",
-        "category": "Food & Beverage",
-        "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape"
+        "title": "Iced Caramel Latte",
+        "category": "Cold Beverages",
+        "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$5.50",
+        "description": "Smooth espresso over ice with caramel and cold milk",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 105,
-        "title": "Crossfit Power",
-        "category": "Fitness & Wellness",
-        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape"
+        "title": "Croissant Sandwich",
+        "category": "Breakfast",
+        "image": "https://images.unsplash.com/photo-1623334044303-241021148842?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$9.99",
+        "description": "Buttery croissant with scrambled eggs, cheese, and bacon",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 106,
-        "title": "Skincare Essentials",
-        "category": "Beauty & Personal Care",
-        "image": "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=800&auto=format&fit=crop",
-        "orientation": "portrait"
+        "title": "Flat White",
+        "category": "Hot Beverages",
+        "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$4.75",
+        "description": "Double ristretto with microfoam milk art",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 107,
-        "title": "Streetwear 2024",
-        "category": "Fashion & Apparel",
-        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-        "orientation": "portrait"
+        "title": "Caesar Salad",
+        "category": "Main Course",
+        "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$11.99",
+        "description": "Crisp romaine, parmesan, croutons, and grilled chicken",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 108,
-        "title": "Island Life",
-        "category": "Travel & Local experience",
-        "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=800&auto=format&fit=crop",
-        "orientation": "portrait"
+        "title": "Matcha Latte",
+        "category": "Hot Beverages",
+        "image": "https://images.unsplash.com/photo-1536013266657-66e44f3e8ad4?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$5.25",
+        "description": "Premium Japanese matcha whisked with steamed milk",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 109,
-        "title": "Sushi Master",
-        "category": "Food & Beverage",
-        "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd43ea?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape"
+        "title": "Belgian Waffle",
+        "category": "Desserts",
+        "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$10.99",
+        "description": "Fluffy waffle with fresh berries, whipped cream, and maple syrup",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 110,
-        "title": "Yoga Flow",
-        "category": "Fitness & Wellness",
-        "image": "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?q=80&w=800&auto=format&fit=crop",
-        "orientation": "portrait"
+        "title": "Grilled Panini",
+        "category": "Main Course",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$13.99",
+        "description": "Pressed Italian sandwich with mozzarella, tomato, and pesto",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 111,
-        "title": "Makeup Mastery",
-        "category": "Beauty & Personal Care",
-        "image": "https://images.unsplash.com/photo-1522335789203-abd1aaccd158?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape"
+        "title": "Espresso Shot",
+        "category": "Hot Beverages",
+        "image": "https://images.unsplash.com/photo-1610889556528-9a770e32642f?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$3.00",
+        "description": "Pure, bold espresso from single-origin beans",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 112,
-        "title": "Vintage Vibes",
-        "category": "Fashion & Apparel",
-        "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape"
+        "title": "Chocolate Brownie",
+        "category": "Desserts",
+        "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$6.99",
+        "description": "Fudgy brownie with walnuts and chocolate chips",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 113,
-        "title": "Parisian Streets",
-        "category": "Travel & Local experience",
-        "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape"
+        "title": "Iced Americano",
+        "category": "Cold Beverages",
+        "image": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$4.25",
+        "description": "Bold espresso over ice with cold water",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 114,
-        "title": "Burger Bliss",
-        "category": "Food & Beverage",
-        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape"
+        "title": "Quinoa Bowl",
+        "category": "Main Course",
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$14.99",
+        "description": "Healthy quinoa with roasted vegetables and tahini dressing",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 115,
-        "title": "Gym Rat",
-        "category": "Fitness & Wellness",
-        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop",
-        "orientation": "portrait"
+        "title": "Fruit Smoothie",
+        "category": "Cold Beverages",
+        "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$6.50",
+        "description": "Fresh mixed berries blended with yogurt and honey",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 116,
-        "title": "Mountain Peak",
-        "category": "Travel & Local experience",
-        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape"
+        "title": "French Toast",
+        "category": "Breakfast",
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$11.50",
+        "description": "Brioche French toast with berries and powdered sugar",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 117,
-        "title": "Healthy Greens",
-        "category": "Food & Beverage",
-        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop",
-        "orientation": "portrait"
+        "title": "Cheesecake Slice",
+        "category": "Desserts",
+        "image": "https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$7.99",
+        "description": "Creamy New York style cheesecake with berry compote",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 118,
-        "title": "Spa Day",
-        "category": "Beauty & Personal Care",
-        "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop",
-        "orientation": "landscape"
+        "title": "Bagel & Lox",
+        "category": "Breakfast",
+        "image": "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$13.50",
+        "description": "Fresh bagel with smoked salmon, cream cheese, and capers",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       },
       {
         "id": 119,
-        "title": "Urban Style",
-        "category": "Fashion & Apparel",
-        "image": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=800&auto=format&fit=crop",
-        "orientation": "portrait"
+        "title": "Chai Latte",
+        "category": "Hot Beverages",
+        "image": "https://images.unsplash.com/photo-1578899952107-9d0fa84fdef6?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$4.99",
+        "description": "Spiced chai tea with steamed milk and honey",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
+      },
+      {
+        "id": 120,
+        "title": "Club Sandwich",
+        "category": "Main Course",
+        "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=1200&auto=format&fit=crop",
+        "orientation": "portrait",
+        "link": "https://zomato.com",
+        "price": "$12.99",
+        "description": "Triple-decker with turkey, bacon, lettuce, and tomato",
+        "textColor": "#ffffff",
+        "textPosition": {
+          "x": 50,
+          "y": 85
+        }
       }
     ],
     "about": {
-      "metrics": [
-        500,
-        3,
-        1200000
-      ],
-      "metricLabels": [
-        "Polished",
-        "Years",
-        "Views"
-      ],
-      "text": "I am a creative video editor",
-      "image": "https://kgramjutjldqiabjzrih.supabase.co/storage/v1/object/public/portfolio-images/1769867112612-b9339779.jfif"
+      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200&auto=format&fit=crop"
     },
     "cinema": {
-      "title": "Long Form Works",
-      "subtitle": "Cinematic",
+      "title": "Our Specialties",
+      "subtitle": "Signature Creations",
       "items": [
         {
           "id": 1,
-          "title": "The Summit",
-          "category": "Documentary",
-          "description": "A journey to the highest peaks using cinematic drone shots.",
-          "image": "/images/cinematic_thumbnail_1.png"
+          "title": "Artisan Coffee Bar",
+          "category": "Ambiance",
+          "description": "Experience our skilled baristas crafting the perfect cup, from pour-over to espresso.",
+          "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop"
         },
         {
           "id": 2,
-          "title": "Velocity",
-          "category": "Commercial",
-          "description": "High-speed automotive commercial featuring dynamic ramping.",
-          "image": "https://i.postimg.cc/mg0LGwRL/da0c007b4bb5cd942a039d3eab55ef4f.jpg"
+          "title": "Farm-to-Table Brunch",
+          "category": "Specialty",
+          "description": "Weekend brunch featuring locally sourced ingredients and seasonal favorites.",
+          "image": "https://images.unsplash.com/photo-1533777324565-a040eb52facd?q=80&w=1200&auto=format&fit=crop"
         }
       ]
     },
     "reviews": [
       {
         "id": 1,
-        "name": "Alex Creator",
-        "role": "YouTuber (1M+)",
-        "text": "Mishwa's editing took my channel to the next level. Retention rates skyrocketed!",
-        "image": "https://randomuser.me/api/portraits/men/32.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Sarah Fitness",
-        "role": "Instagram Coach",
-        "text": "Fast turnaround and incredible attention to detail. The best investment for my brand.",
+        "name": "Sarah Mitchell",
+        "role": "Food Blogger",
+        "text": "The best cappuccino in town! The ambiance is perfect for work or catching up with friends.",
         "image": "https://randomuser.me/api/portraits/women/44.jpg"
       },
       {
+        "id": 2,
+        "name": "James Chen",
+        "role": "Local Resident",
+        "text": "Cafe De Meet has become my morning ritual. Great coffee, amazing pastries, and friendly staff!",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
         "id": 3,
-        "name": "TechDaily",
-        "role": "Tech Reviewer",
-        "text": "She just gets the vibe immediately. No revision needed. Pure magic.",
-        "image": "https://randomuser.me/api/portraits/men/85.jpg"
+        "name": "Emily Rodriguez",
+        "role": "Coffee Enthusiast",
+        "text": "A hidden gem! The single-origin pour-overs are incredible. This is my new favorite spot.",
+        "image": "https://randomuser.me/api/portraits/women/68.jpg"
       }
     ]
   },
   "analytics": {
     "visits": [],
     "ip_logs": [],
-    "reelClicks": {
-      "101": 3
+    "reelClicks": {},
+    "menuItemClicks": {
+      "101": 0,
+      "102": 0,
+      "103": 0,
+      "104": 0
     },
     "stats": {
       "total_visitors": 0,
@@ -235,114 +404,5 @@
       }
     }
   },
-  "notifications": [
-    {
-      "id": "7a2e3737-1589-403c-a7e6-fc694215aa39",
-      "type": "info",
-      "title": "Content Updated",
-      "message": "Website content was modified via CMS",
-      "ip": null,
-      "timestamp": "2026-01-31T13:45:14.389Z",
-      "read": false
-    },
-    {
-      "id": "547b1bc9-8332-4d03-8d37-ea8f335d8bb7",
-      "type": "info",
-      "title": "Image Uploaded",
-      "message": "New image uploaded: 1769867112612-b9339779.jfif",
-      "ip": null,
-      "timestamp": "2026-01-31T13:45:12.861Z",
-      "read": false
-    },
-    {
-      "id": "6e88de36-3c71-4238-9d60-67c60fbda01e",
-      "type": "info",
-      "title": "Content Updated",
-      "message": "Website content was modified via CMS",
-      "ip": null,
-      "timestamp": "2026-01-31T12:24:08.555Z",
-      "read": false
-    },
-    {
-      "id": "266edc1b-8606-4df1-b2ed-f8aa47cf1b81",
-      "type": "info",
-      "title": "Content Updated",
-      "message": "Website content was modified via CMS",
-      "ip": null,
-      "timestamp": "2026-01-31T12:24:02.355Z",
-      "read": false
-    },
-    {
-      "id": "3fbc2f7b-9741-4d06-b053-15ebb05c9bdb",
-      "type": "info",
-      "title": "Image Uploaded",
-      "message": "New image uploaded: 1769862239290-5394375f.webp",
-      "ip": null,
-      "timestamp": "2026-01-31T12:23:59.970Z",
-      "read": false
-    },
-    {
-      "id": "e66f4076-9ab1-41c1-9d09-ebba855033d1",
-      "type": "info",
-      "title": "Content Updated",
-      "message": "Website content was modified via CMS",
-      "ip": null,
-      "timestamp": "2026-01-31T12:13:29.788Z",
-      "read": false
-    },
-    {
-      "id": "4eefb98b-56b5-42bb-84e4-72bcc65d6ff2",
-      "type": "info",
-      "title": "Content Updated",
-      "message": "Website content was modified via CMS",
-      "ip": null,
-      "timestamp": "2026-01-31T12:09:08.306Z",
-      "read": false
-    },
-    {
-      "id": "ebf2e33f-dc76-46c7-afbb-46a66737e14c",
-      "type": "info",
-      "title": "Content Updated",
-      "message": "Website content was modified via CMS",
-      "ip": null,
-      "timestamp": "2026-01-31T12:09:00.216Z",
-      "read": false
-    },
-    {
-      "id": "f62bdea9-3cba-4a32-914f-659f0eb88878",
-      "type": "info",
-      "title": "Image Uploaded",
-      "message": "New image uploaded: 1769861336541-528700f1.jfif",
-      "ip": null,
-      "timestamp": "2026-01-31T12:08:56.870Z",
-      "read": false
-    },
-    {
-      "id": "e8d647fb-0ca4-438c-89a1-fbdf1056bbec",
-      "type": "info",
-      "title": "Content Updated",
-      "message": "Website content was modified via CMS",
-      "ip": null,
-      "timestamp": "2026-01-31T12:06:39.639Z",
-      "read": false
-    },
-    {
-      "id": "993193f4-657a-4023-8377-e8c423892bfe",
-      "type": "info",
-      "title": "Content Updated",
-      "message": "Website content was modified via CMS",
-      "ip": null,
-      "timestamp": "2026-01-31T12:04:13.657Z",
-      "read": false
-    },
-    {
-      "id": "7517b569-b036-4f3c-88fd-09fafdff10d4",
-      "type": "info",
-      "title": "Content Updated",
-      "message": "Website content was modified via CMS",
-      "ip": null,
-      "timestamp": "2026-01-31T12:03:55.964Z",
-      "read": false
-    }
-  ]
+  "notifications": []
 }

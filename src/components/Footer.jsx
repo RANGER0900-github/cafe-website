@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { Instagram, Youtube, Twitter, Mail } from 'lucide-react';
+import { Instagram, Youtube, Twitter, Mail, Phone } from 'lucide-react';
 import { useContent } from '../context/ContentContext';
 import { formatExternalLink } from '../utils/linkUtils';
+import { SiZomato } from 'react-icons/si';
 
 const Footer = () => {
     const { content } = useContent();
@@ -61,7 +62,7 @@ const Footer = () => {
                     {/* Social Icons */}
                     {footer.showSocial && social && (
                         <motion.div 
-                            className="flex items-center gap-8"
+                            className="flex items-center gap-6"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ delay: 0.2 }}
@@ -71,41 +72,41 @@ const Footer = () => {
                                     href={formatExternalLink(social.instagram)} 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
-                                    className="text-gray-400 hover:text-secondary transition-all p-2 hover:bg-secondary/10 rounded-lg"
+                                    className="text-gray-400 hover:text-primary transition-all p-2 hover:bg-primary/10 rounded-lg"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
                                     <Instagram size={20} />
                                 </motion.a>
                             )}
-                            {social.youtube && (
+                            {social.zomato && (
                                 <motion.a 
-                                    href={formatExternalLink(social.youtube)} 
+                                    href={formatExternalLink(social.zomato)} 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
-                                    className="text-gray-400 hover:text-secondary transition-all p-2 hover:bg-secondary/10 rounded-lg"
+                                    className="text-gray-400 hover:text-primary transition-all p-2 hover:bg-primary/10 rounded-lg"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.95 }}
+                                    title="Order on Zomato"
                                 >
-                                    <Youtube size={20} />
+                                    <SiZomato size={20} />
                                 </motion.a>
                             )}
-                            {social.twitter && (
+                            {social.phone && (
                                 <motion.a 
-                                    href={formatExternalLink(social.twitter)} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className="text-gray-400 hover:text-secondary transition-all p-2 hover:bg-secondary/10 rounded-lg"
+                                    href={`tel:${social.phone}`} 
+                                    className="text-gray-400 hover:text-primary transition-all p-2 hover:bg-primary/10 rounded-lg"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.95 }}
+                                    title="Call us"
                                 >
-                                    <Twitter size={20} />
+                                    <Phone size={20} />
                                 </motion.a>
                             )}
                             {social.email && (
                                 <motion.a 
                                     href={`mailto:${social.email}`} 
-                                    className="text-gray-400 hover:text-secondary transition-all p-2 hover:bg-secondary/10 rounded-lg"
+                                    className="text-gray-400 hover:text-primary transition-all p-2 hover:bg-primary/10 rounded-lg"
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.95 }}
                                 >

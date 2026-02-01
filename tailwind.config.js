@@ -7,12 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#020c1b', // Deep Navy
-        primary: '#64ffda', // Electric Green/Cyan (United Nodes style often uses this or Blue)
-        secondary: '#00f3ff', // Electric Blue
-        accent: '#bd34fe', // Glowing Purple
-        text: '#cbd5e1', // Slate 300
-        'card-bg': '#112240', // Light Navy
+        background: '#0f0b08', // Deep coffee brown/black
+        primary: '#d4a574', // Warm caramel/latte
+        secondary: '#c7956d', // Coffee cream
+        accent: '#8b6f47', // Rich coffee brown
+        text: '#e8dcc8', // Cream white
+        'card-bg': '#1a1512', // Dark wood brown
+        'cafe-gold': '#d4a574',
+        'cafe-cream': '#f5ebe0',
+        'cafe-dark': '#2c1810',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
