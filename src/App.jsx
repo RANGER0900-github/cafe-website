@@ -6,7 +6,7 @@ import { ContentProvider } from './context/ContentContext';
 import ErrorBoundary from './components/ErrorBoundary';
 import Preloader from './components/Preloader';
 import Home from './pages/Home';
-import AllReels from './pages/AllReels';
+import AllMenu from './pages/AllMenu';
 import Login from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
 import ContentCMS from './pages/admin/ContentCMS';
@@ -105,7 +105,8 @@ const MainContent = () => {
       {!isLoading && (
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />
-          <Route path="/reels" element={<AllReels />} />
+          <Route path="/menu" element={<AllMenu />} />
+          <Route path="/reels" element={<AllMenu />} /> {/* Backward compatibility */}
 
           {/* Admin Routes */}
           <Route path="/admin/login" element={<Login />} />
@@ -155,9 +156,10 @@ function App() {
       <Router>
         <ContentProvider>
           <LoadingProvider>
-            <div className="bg-background min-h-screen text-text selection:bg-secondary selection:text-background">
+            <div className="bg-background min-h-screen text-text selection:bg-primary selection:text-black">
               <div className="fixed inset-0 pointer-events-none z-0">
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#112240] via-background to-background opacity-50"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cafe-dark via-background to-background opacity-60"></div>
+                <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNkNGE1NzQiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PHBhdGggZD0iTTM2IDE4YzAtMS42NTctMS4zNDMtMy0zLTNzLTMgMS4zNDMtMyAzIDEuMzQzIDMgMyAzIDMtMS4zNDMgMy0zeiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
               </div>
               <MainContent />
             </div>

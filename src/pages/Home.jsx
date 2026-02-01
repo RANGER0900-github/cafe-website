@@ -1,7 +1,7 @@
 import Hero from '../components/Hero';
-import Work from '../components/Work';
+import Menu from '../components/Menu';
 import Cinema from '../components/Cinema';
-import About from '../components/About';
+import Location from '../components/Location';
 import Reviews from '../components/Reviews';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -11,9 +11,9 @@ const Home = () => {
         <div className="relative z-10 w-full overflow-hidden">
             <Navbar />
             <Hero />
-            <Work />
+            <Menu />
             <Cinema />
-            <About />
+            <Location />
             <Reviews />
             <Footer />
         </div>
